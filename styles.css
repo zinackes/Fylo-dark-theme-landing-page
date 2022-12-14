@@ -1,14 +1,22 @@
 body{
     background-color: hsl(217, 28%, 15%);
     margin: 0;
+    font-family: 'Open Sans';
+    min-height: 100vh;
 }
 
-
-header{
+nav{
     display: flex;
     align-items: center;
     font-family: 'Raleway';
-    margin: 70px;
+    padding: 70px;
+}
+
+header{
+    background: url("./images/bg-curvy-desktop.svg") no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    position: relative;
 }
 
 ul{
@@ -29,16 +37,30 @@ a{
 a:hover{
     font-weight: 700;
     text-decoration: underline;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
+section{
+    display: grid;
     justify-content: center;
     align-items: center;
+    font-family: 'Raleway';
+    padding-bottom: 100px;
 }
 
-h1{
+img{
+    max-width: 600px;
+}
+
+section > div > h1{
     color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+header > section > div{
+    grid-column: 2;
+    display: grid;
+    text-align: center;
 }
