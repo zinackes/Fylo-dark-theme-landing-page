@@ -2,7 +2,6 @@ body{
     background-color: hsl(217, 28%, 15%);
     margin: 0;
     font-family: 'Open Sans';
-    min-height: 100vh;
 }
 
 nav{
@@ -15,7 +14,7 @@ nav{
 header{
     background: url("./images/bg-curvy-desktop.svg") no-repeat;
     background-position: bottom;
-    background-size: 100%;
+    background-size: 100% 50vh;
     position: relative;
 }
 
